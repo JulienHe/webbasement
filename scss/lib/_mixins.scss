@@ -1,0 +1,31 @@
+//Use for the appearance of basic element such as input
+@mixin appearance($value){
+	-webkit-appearance: $value;
+	-moz-appearance:    $value;
+	appearance:         $value;
+}
+
+//Border radius
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	border-radius: $radius;
+	background-clip: padding-box;
+}
+
+//centerong block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+//Truncate text
+@mixin text-truncate {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin breakpoint($point) {
+    @media (min-width: $point) { @content; }
+}

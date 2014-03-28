@@ -1,0 +1,19 @@
+%animate{
+  @include transition-property(all);
+  @include transition-duration(.3s);
+}
+
+%animateOpacity{
+  @include transition-property(opacity);
+  @include transition-duration(.3s);
+}
+
+%animateFast{
+   @include transition-property(all);
+   @include transition-duration(.15s);
+}
+
+%animateFastOpacity{
+   @include transition-property(opacity);
+   @include transition-duration(.3s);
+}

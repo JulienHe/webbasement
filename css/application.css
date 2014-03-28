@@ -1,0 +1,309 @@
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ * Setup
+ */
+/*
+ * colors (prototype)
+ */
+/*
+ * colors (website)
+ */
+/* line 1, ../scss/lib/_reset.scss */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box; }
+
+/* line 7, ../scss/lib/_reset.scss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video, a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  list-style: none;
+  text-decoration: none; }
+
+/* line 30, ../scss/lib/_reset.scss */
+body {
+  line-height: 1; }
+
+/* line 34, ../scss/lib/_reset.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 39, ../scss/lib/_reset.scss */
+nav ul {
+  list-style: none; }
+
+/* line 43, ../scss/lib/_reset.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 47, ../scss/lib/_reset.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 53, ../scss/lib/_reset.scss */
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+/* line 63, ../scss/lib/_reset.scss */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none; }
+
+/* change colours to suit your needs */
+/* line 70, ../scss/lib/_reset.scss */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold; }
+
+/* line 77, ../scss/lib/_reset.scss */
+del {
+  text-decoration: line-through; }
+
+/* line 81, ../scss/lib/_reset.scss */
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help; }
+
+/* line 86, ../scss/lib/_reset.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* change border colour to suit your needs */
+/* line 92, ../scss/lib/_reset.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 101, ../scss/lib/_reset.scss */
+input, select {
+  vertical-align: middle; }
+
+/* line 105, ../scss/lib/_reset.scss */
+ul, li, ol {
+  list-style: none; }
+
+/**
+ * Gridily
+ * 
+ * Credits/Inspiration:
+ * -------------------
+ * Profound Grid: http://profoundgrid-master.dev/
+ *
+ * @author Julien Henrotte
+ * @url http://www.da-ha.be
+ */
+@font-face {
+  font-family: "terra-nova";
+  src: url("../fonts/terra-nova.eot");
+  src: url("../fonts/terra-nova.eot?#iefix") format("embedded-opentype"), url("../fonts/terra-nova.woff") format("woff"), url("../fonts/terra-nova.ttf") format("truetype"), url("../fonts/terra-nova.svg#terra-nova") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* line 13, ../scss/lib/_fonts.scss */
+[data-icon]:before {
+  font-family: "terra-nova" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+/* line 11, ../scss/lib/_animate.scss */
+[class*='button--'] {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.15s;
+  -o-transition-duration: 0.15s;
+  -webkit-transition-duration: 0.15s;
+  transition-duration: 0.15s; }
+
+/* line 1, ../scss/lib/_button.scss */
+[class*='button--'] {
+  display: inline;
+  border: 1px solid #e3e6e8;
+  color: #4d5466;
+  background-color: transparent;
+  padding: .5rem 1.5rem;
+  outline: 0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-clip: padding-box;
+  font-size: 1.2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  margin: .5rem 0;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer; }
+  /* line 18, ../scss/lib/_button.scss */
+  [class*='button--']:hover, [class*='button--']:focus, [class*='button--'].selected {
+    background-color: #f4f5f7; }
+
+/* line 50, ../scss/lib/_button.scss */
+.button--login, .button--add {
+  border-color: #35bc7a;
+  color: #35bc7a; }
+  /* line 53, ../scss/lib/_button.scss */
+  .button--login:hover, .button--login.selected, .button--login.disable, .button--add:hover, .button--add.selected, .button--add.disable {
+    background-color: #35bc7a;
+    color: white; }
+  /* line 57, ../scss/lib/_button.scss */
+  .button--login.disable, .button--login[disabled=disabled], .button--login:disabled, .button--add.disable, .button--add[disabled=disabled], .button--add:disabled {
+    font-size: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    cursor: default; }
+    /* line 61, ../scss/lib/_button.scss */
+    .button--login.disable:before, .button--login[disabled=disabled]:before, .button--login:disabled:before, .button--add.disable:before, .button--add[disabled=disabled]:before, .button--add:disabled:before {
+      font-size: 1.3rem;
+      content: 'Loading...'; }
+
+/* line 50, ../scss/lib/_button.scss */
+.button--back {
+  border-color: #4d5466;
+  color: #4d5466; }
+  /* line 53, ../scss/lib/_button.scss */
+  .button--back:hover, .button--back.selected, .button--back.disable {
+    background-color: #4d5466;
+    color: white; }
+  /* line 57, ../scss/lib/_button.scss */
+  .button--back.disable, .button--back[disabled=disabled], .button--back:disabled {
+    font-size: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    cursor: default; }
+    /* line 61, ../scss/lib/_button.scss */
+    .button--back.disable:before, .button--back[disabled=disabled]:before, .button--back:disabled:before {
+      font-size: 1.3rem;
+      content: 'Loading...'; }
+
+/* line 50, ../scss/lib/_button.scss */
+.button--basic {
+  border-color: #1e8bc3;
+  color: #1e8bc3; }
+  /* line 53, ../scss/lib/_button.scss */
+  .button--basic:hover, .button--basic.selected, .button--basic.disable {
+    background-color: #1e8bc3;
+    color: white; }
+  /* line 57, ../scss/lib/_button.scss */
+  .button--basic.disable, .button--basic[disabled=disabled], .button--basic:disabled {
+    font-size: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    cursor: default; }
+    /* line 61, ../scss/lib/_button.scss */
+    .button--basic.disable:before, .button--basic[disabled=disabled]:before, .button--basic:disabled:before {
+      font-size: 1.3rem;
+      content: 'Loading...'; }
+
+/* line 50, ../scss/lib/_button.scss */
+.button--unfollow {
+  border-color: #fd8e20;
+  color: #fd8e20; }
+  /* line 53, ../scss/lib/_button.scss */
+  .button--unfollow:hover, .button--unfollow.selected, .button--unfollow.disable {
+    background-color: #fd8e20;
+    color: white; }
+  /* line 57, ../scss/lib/_button.scss */
+  .button--unfollow.disable, .button--unfollow[disabled=disabled], .button--unfollow:disabled {
+    font-size: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    cursor: default; }
+    /* line 61, ../scss/lib/_button.scss */
+    .button--unfollow.disable:before, .button--unfollow[disabled=disabled]:before, .button--unfollow:disabled:before {
+      font-size: 1.3rem;
+      content: 'Loading...'; }
+
+/* line 50, ../scss/lib/_button.scss */
+.button--reset, .button--remove {
+  border-color: #e33d41;
+  color: #e33d41; }
+  /* line 53, ../scss/lib/_button.scss */
+  .button--reset:hover, .button--reset.selected, .button--reset.disable, .button--remove:hover, .button--remove.selected, .button--remove.disable {
+    background-color: #e33d41;
+    color: white; }
+  /* line 57, ../scss/lib/_button.scss */
+  .button--reset.disable, .button--reset[disabled=disabled], .button--reset:disabled, .button--remove.disable, .button--remove[disabled=disabled], .button--remove:disabled {
+    font-size: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    cursor: default; }
+    /* line 61, ../scss/lib/_button.scss */
+    .button--reset.disable:before, .button--reset[disabled=disabled]:before, .button--reset:disabled:before, .button--remove.disable:before, .button--remove[disabled=disabled]:before, .button--remove:disabled:before {
+      font-size: 1.3rem;
+      content: 'Loading...'; }
+
+/* line 50, ../scss/lib/_button.scss */
+.button--gotit {
+  border-color: white;
+  color: white; }
+  /* line 53, ../scss/lib/_button.scss */
+  .button--gotit:hover, .button--gotit.selected, .button--gotit.disable {
+    background-color: white;
+    color: white; }
+  /* line 57, ../scss/lib/_button.scss */
+  .button--gotit.disable, .button--gotit[disabled=disabled], .button--gotit:disabled {
+    font-size: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    cursor: default; }
+    /* line 61, ../scss/lib/_button.scss */
+    .button--gotit.disable:before, .button--gotit[disabled=disabled]:before, .button--gotit:disabled:before {
+      font-size: 1.3rem;
+      content: 'Loading...'; }
+
+/* line 1, ../scss/lib/_base-class.scss */
+.left {
+  float: left; }
+
+/* line 5, ../scss/lib/_base-class.scss */
+.right {
+  float: right; }
+
+/* line 9, ../scss/lib/_base-class.scss */
+.clearfix {
+  clear: both; }

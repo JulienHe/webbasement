@@ -1,0 +1,61 @@
+/**
+ * Gridily
+ * 
+ * Credits/Inspiration:
+ * -------------------
+ * Profound Grid: http://profoundgrid-master.dev/
+ *
+ * @author Julien Henrotte
+ * @url http://www.da-ha.be
+ */
+
+$total_columns: 	12;			// 				//
+$full-width:        1140px; 	// px|100% 		// px = fixed, 100% = fluid
+$gutter_width:		1%;		    // px|%			// px = fixed, % = fluid
+
+
+//BREAKPOINT
+$bp-small: 30em;
+$bp-med: 50em;
+$bp-large: 62em;
+$bp-xlarge: 82em;
+
+$base-breakpoint : ($bp-small, $bp-med, $bp-large, $bp-xlarge);
+
+%grid-margin{
+	float: left;
+	margin-left:#{$gutter_width /2};
+	margin-right: #{$gutter_width /2};
+}
+
+@mixin column($column, $changed-breakpoint:null){
+	//Create the breakpoint collection
+	$width-column : ((100% / #{$total_columns}));
+	
+	$breakpoint : $base-breakpoint;
+	@if $changed-breakpoint {
+		$breakpoint : $changed-breakpoint;
+	}
+
+	float: left;
+	margin-left:#{$gutter_width /2};
+	margin-right: #{$gutter_width /2};
+	width: calc(100% - #{$gutter_width});
+	@for $i from 0 to length($column) {
+		//Get the right breakpoint
+		$column-numbers: unquote(nth($column, $i+1));
+	    //Instance the media queries
+	    @media screen and (min-width: unquote(nth($breakpoint, $i+1))) {
+	    	width: calc( (#{$width-column}) * #{$column-numbers} - #{$gutter_width});
+	    }
+	}
+}
+
+@mixin simple-column($column, $pull:null){
+		//Create the breakpoint collection
+		$width-column : ((100% / #{$total_columns}));
+		@if $pull {
+			$float : $pull;
+		}
+		width: calc( (#{$width-column}) * #{$column} - #{$gutter_width});
+}

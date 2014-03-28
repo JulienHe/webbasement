@@ -1,0 +1,67 @@
+[class*='button--']{
+	display: inline;
+	border: 1px solid $border;
+	color: $lightBlack;
+	background-color: transparent;
+	padding: .5rem 1.5rem;
+	outline: 0;
+	@include border-radius(2px);
+	font-size: 1.2rem;
+	font-weight: 100;
+	text-transform: uppercase;
+	margin: .5rem 0;
+	@extend %animateFast;
+	display: inline-block;
+	text-decoration: none;
+	text-align: center;
+	cursor: pointer;
+	&:hover, &:focus,&.selected{
+		background-color: lighten($lightGrayButton, 5%);
+	}
+}
+
+//Colors we want
+$color-collection: 
+($green, $lightBlack, $blue, $orange, $red, white);
+
+//Type button we want (Collection must be equal to colors collection)
+$type-collection : 
+(login,add) 
+(back) 
+(basic)
+(unfollow) 
+(reset,remove)
+(gotit);
+
+@each $colors in $color-collection {
+	$theColor : $colors;
+	//Index for the color collection
+	$u : index($color-collection, $colors);
+	//Get the good type-collection index
+	$collect : nth($type-collection, $u);
+
+	//Use collection to add class with ','
+	$selector: ();
+	//Create class and add after
+	@for $i from 1 through length($collect){
+		$selector: append($selector, unquote('.button--#{nth($collect, $i)}'), comma);
+	}
+	$this-color: $theColor;
+	#{$selector} {
+		border-color: $this-color;
+		color: $this-color;
+		&:hover,&.selected,&.disable{
+			background-color: $this-color;
+			color: white;
+		}
+		&.disable,&[disabled=disabled], &:disabled{
+			font-size: 0;
+			@include opacity(.5);
+			cursor: default;
+			&:before{
+				font-size: 1.3rem;
+				content: 'Loading...';
+			}
+		}
+	}
+}
