@@ -1,3 +1,30 @@
+body{
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	text-size-adjust: 100%;
+	font-size: 62.5%;
+	line-height: 1.6;
+	font-family: 'Raleway', sans-serif;
+	padding-top: 30px;
+	@include breakpoint(960px) {
+		padding-top: 40px;
+	}
+}
+
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Raleway', sans-serif;
+}
+
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
+
+a,button{
+	outline: 0;
+}
+
 .left{
 	float: left;
 }
@@ -8,4 +35,14 @@
 
 .clearfix{
 	clear: both;
+}
+
+.wrapper{
+	width: 100%;
+	padding: 0 1rem;
+	@include breakpoint(980px) {
+		width: 960px;
+		margin: 0 auto;
+		padding: 0;
+	}
 }

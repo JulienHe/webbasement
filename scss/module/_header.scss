@@ -1,0 +1,22 @@
+.header{
+	height: 60px;
+	width: 100%;
+
+	background-color: $bgHeader;
+	border-bottom: 1px solid $borderHeader;
+	
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	text-align: center;
+	.header--logo{
+		display: inline-block;
+		margin-top: .7rem;
+		img{
+			width: 40px;
+			height: auto;
+			margin-top: .5rem;
+		}
+	}
+}

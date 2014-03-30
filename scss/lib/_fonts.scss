@@ -1,17 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100);
+
 @font-face {
-  font-family: "terra-nova";
-  src:url("../fonts/terra-nova.eot");
-  src:url("../fonts/terra-nova.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/terra-nova.woff") format("woff"),
-    url("../fonts/terra-nova.ttf") format("truetype"),
-    url("../fonts/terra-nova.svg#terra-nova") format("svg");
+  font-family: "webbasement";
+  src:url("../fonts/webbasement.eot");
+  src:url("../fonts/webbasement.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/webbasement.woff") format("woff"),
+    url("../fonts/webbasement.ttf") format("truetype"),
+    url("../fonts/webbasement.svg#webbasement") format("svg");
   font-weight: normal;
   font-style: normal;
 
 }
 
 [data-icon]:before {
-  font-family: "terra-nova" !important;
+  font-family: "webbasement" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;

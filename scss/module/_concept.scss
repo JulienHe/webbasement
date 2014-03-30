@@ -1,0 +1,16 @@
+.concept{
+	background-color: #2F2E30;
+	padding: 1rem 0;
+	text-align: center;
+	.text--text{
+		width: 100%;
+		color: white;
+		font-style: italic;
+		 @include breakpoint($bp-med) {
+		 	width: 75%;
+		 }
+		 @include breakpoint($bp-large) {
+		 	width: 75%;
+		 }
+	}
+}

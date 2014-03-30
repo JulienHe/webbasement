@@ -1,0 +1,60 @@
+.footer{
+	background-color: #2F2E30;
+	color: $footer-color;
+	padding: 1rem 0;
+	overflow: hidden;
+	text-align: center;
+	@include breakpoint(960px) {
+		text-align: left;
+	}
+	a{
+		color: $footer-color;
+		text-decoration: underline;
+	}
+	hr{
+		display: inline-block;
+		width: 20px;
+		background-color: $footer-color;
+		margin: 1rem auto;
+	}
+	.footer--logowb{
+		color: $footer-color;
+		line-height: 0;
+		font-size: 3rem;
+		display: inline-block;
+		vertical-align: top;
+		@include breakpoint(960px) {
+			font-size: 2rem;
+			float: left;
+		}
+	}
+	.footer--list{
+		float: right;
+		overflow: hidden;
+		width: 100%;
+		@include breakpoint(960px) {
+			width: calc(100% - 60px);
+		}
+		li{
+			float: left;
+			width: 100%;
+			@include breakpoint($bp-med) {
+				width: 25%;	
+			}			
+			.footer__list--title{
+				font-size: 14px;
+				display: inline-block;
+				font-weight: 300;
+				margin-bottom: 1rem;
+				text-transform: uppercase;
+			}
+			.footer__list--text{
+				overflow: hidden;
+				display: inline-block;
+				width: 100%;
+				font-size: 10px;
+				margin-bottom: .5rem;
+			}
+		}
+	}
+}

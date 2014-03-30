@@ -5,11 +5,9 @@
  * Setup
  */
 /*
- * colors (prototype)
- */
-/*
  * colors (website)
  */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700,300,200,100);
 /* line 1, ../scss/lib/_reset.scss */
 * {
   box-sizing: border-box;
@@ -130,14 +128,14 @@ ul, li, ol {
  * @url http://www.da-ha.be
  */
 @font-face {
-  font-family: "terra-nova";
-  src: url("../fonts/terra-nova.eot");
-  src: url("../fonts/terra-nova.eot?#iefix") format("embedded-opentype"), url("../fonts/terra-nova.woff") format("woff"), url("../fonts/terra-nova.ttf") format("truetype"), url("../fonts/terra-nova.svg#terra-nova") format("svg");
+  font-family: "webbasement";
+  src: url("../fonts/webbasement.eot");
+  src: url("../fonts/webbasement.eot?#iefix") format("embedded-opentype"), url("../fonts/webbasement.woff") format("woff"), url("../fonts/webbasement.ttf") format("truetype"), url("../fonts/webbasement.svg#webbasement") format("svg");
   font-weight: normal;
   font-style: normal; }
-/* line 13, ../scss/lib/_fonts.scss */
+/* line 15, ../scss/lib/_fonts.scss */
 [data-icon]:before {
-  font-family: "terra-nova" !important;
+  font-family: "webbasement" !important;
   content: attr(data-icon);
   font-style: normal !important;
   font-weight: normal !important;
@@ -147,6 +145,17 @@ ul, li, ol {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+/* line 1, ../scss/lib/_animate.scss */
+.sponsors .sponsors--list li {
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s; }
 
 /* line 11, ../scss/lib/_animate.scss */
 [class*='button--'] {
@@ -162,7 +171,7 @@ ul, li, ol {
 /* line 1, ../scss/lib/_button.scss */
 [class*='button--'] {
   display: inline;
-  border: 1px solid #e3e6e8;
+  border: 3px solid #e3e6e8;
   color: #4d5466;
   background-color: transparent;
   padding: .5rem 1.5rem;
@@ -170,140 +179,285 @@ ul, li, ol {
   -webkit-border-radius: 2px;
   border-radius: 2px;
   background-clip: padding-box;
-  font-size: 1.2rem;
-  font-weight: 100;
+  font-size: 1rem;
   text-transform: uppercase;
   margin: .5rem 0;
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  cursor: pointer; }
-  /* line 18, ../scss/lib/_button.scss */
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700; }
+  /* line 19, ../scss/lib/_button.scss */
   [class*='button--']:hover, [class*='button--']:focus, [class*='button--'].selected {
     background-color: #f4f5f7; }
 
-/* line 50, ../scss/lib/_button.scss */
-.button--login, .button--add {
-  border-color: #35bc7a;
-  color: #35bc7a; }
-  /* line 53, ../scss/lib/_button.scss */
-  .button--login:hover, .button--login.selected, .button--login.disable, .button--add:hover, .button--add.selected, .button--add.disable {
-    background-color: #35bc7a;
+/* line 46, ../scss/lib/_button.scss */
+.button--mail {
+  border-color: #14b1d2;
+  color: #14b1d2; }
+  /* line 49, ../scss/lib/_button.scss */
+  .button--mail:hover, .button--mail.selected, .button--mail.disable {
+    background-color: #14b1d2;
     color: white; }
-  /* line 57, ../scss/lib/_button.scss */
-  .button--login.disable, .button--login[disabled=disabled], .button--login:disabled, .button--add.disable, .button--add[disabled=disabled], .button--add:disabled {
+  /* line 53, ../scss/lib/_button.scss */
+  .button--mail.disable, .button--mail[disabled=disabled], .button--mail:disabled {
     font-size: 0;
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
     opacity: 0.5;
     cursor: default; }
-    /* line 61, ../scss/lib/_button.scss */
-    .button--login.disable:before, .button--login[disabled=disabled]:before, .button--login:disabled:before, .button--add.disable:before, .button--add[disabled=disabled]:before, .button--add:disabled:before {
-      font-size: 1.3rem;
-      content: 'Loading...'; }
-
-/* line 50, ../scss/lib/_button.scss */
-.button--back {
-  border-color: #4d5466;
-  color: #4d5466; }
-  /* line 53, ../scss/lib/_button.scss */
-  .button--back:hover, .button--back.selected, .button--back.disable {
-    background-color: #4d5466;
-    color: white; }
-  /* line 57, ../scss/lib/_button.scss */
-  .button--back.disable, .button--back[disabled=disabled], .button--back:disabled {
-    font-size: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-    opacity: 0.5;
-    cursor: default; }
-    /* line 61, ../scss/lib/_button.scss */
-    .button--back.disable:before, .button--back[disabled=disabled]:before, .button--back:disabled:before {
-      font-size: 1.3rem;
-      content: 'Loading...'; }
-
-/* line 50, ../scss/lib/_button.scss */
-.button--basic {
-  border-color: #1e8bc3;
-  color: #1e8bc3; }
-  /* line 53, ../scss/lib/_button.scss */
-  .button--basic:hover, .button--basic.selected, .button--basic.disable {
-    background-color: #1e8bc3;
-    color: white; }
-  /* line 57, ../scss/lib/_button.scss */
-  .button--basic.disable, .button--basic[disabled=disabled], .button--basic:disabled {
-    font-size: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-    opacity: 0.5;
-    cursor: default; }
-    /* line 61, ../scss/lib/_button.scss */
-    .button--basic.disable:before, .button--basic[disabled=disabled]:before, .button--basic:disabled:before {
-      font-size: 1.3rem;
-      content: 'Loading...'; }
-
-/* line 50, ../scss/lib/_button.scss */
-.button--unfollow {
-  border-color: #fd8e20;
-  color: #fd8e20; }
-  /* line 53, ../scss/lib/_button.scss */
-  .button--unfollow:hover, .button--unfollow.selected, .button--unfollow.disable {
-    background-color: #fd8e20;
-    color: white; }
-  /* line 57, ../scss/lib/_button.scss */
-  .button--unfollow.disable, .button--unfollow[disabled=disabled], .button--unfollow:disabled {
-    font-size: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-    opacity: 0.5;
-    cursor: default; }
-    /* line 61, ../scss/lib/_button.scss */
-    .button--unfollow.disable:before, .button--unfollow[disabled=disabled]:before, .button--unfollow:disabled:before {
-      font-size: 1.3rem;
-      content: 'Loading...'; }
-
-/* line 50, ../scss/lib/_button.scss */
-.button--reset, .button--remove {
-  border-color: #e33d41;
-  color: #e33d41; }
-  /* line 53, ../scss/lib/_button.scss */
-  .button--reset:hover, .button--reset.selected, .button--reset.disable, .button--remove:hover, .button--remove.selected, .button--remove.disable {
-    background-color: #e33d41;
-    color: white; }
-  /* line 57, ../scss/lib/_button.scss */
-  .button--reset.disable, .button--reset[disabled=disabled], .button--reset:disabled, .button--remove.disable, .button--remove[disabled=disabled], .button--remove:disabled {
-    font-size: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-    opacity: 0.5;
-    cursor: default; }
-    /* line 61, ../scss/lib/_button.scss */
-    .button--reset.disable:before, .button--reset[disabled=disabled]:before, .button--reset:disabled:before, .button--remove.disable:before, .button--remove[disabled=disabled]:before, .button--remove:disabled:before {
-      font-size: 1.3rem;
-      content: 'Loading...'; }
-
-/* line 50, ../scss/lib/_button.scss */
-.button--gotit {
-  border-color: white;
-  color: white; }
-  /* line 53, ../scss/lib/_button.scss */
-  .button--gotit:hover, .button--gotit.selected, .button--gotit.disable {
-    background-color: white;
-    color: white; }
-  /* line 57, ../scss/lib/_button.scss */
-  .button--gotit.disable, .button--gotit[disabled=disabled], .button--gotit:disabled {
-    font-size: 0;
-    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-    opacity: 0.5;
-    cursor: default; }
-    /* line 61, ../scss/lib/_button.scss */
-    .button--gotit.disable:before, .button--gotit[disabled=disabled]:before, .button--gotit:disabled:before {
+    /* line 57, ../scss/lib/_button.scss */
+    .button--mail.disable:before, .button--mail[disabled=disabled]:before, .button--mail:disabled:before {
       font-size: 1.3rem;
       content: 'Loading...'; }
 
 /* line 1, ../scss/lib/_base-class.scss */
+body {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  font-size: 62.5%;
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 30px; }
+  @media (min-width: 960px) {
+    /* line 1, ../scss/lib/_base-class.scss */
+    body {
+      padding-top: 40px; } }
+
+/* line 14, ../scss/lib/_base-class.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Raleway', sans-serif; }
+
+@-webkit-viewport {
+  width: device-width; }
+@-moz-viewport {
+  width: device-width; }
+@-ms-viewport {
+  width: device-width; }
+@-o-viewport {
+  width: device-width; }
+@viewport {
+  width: device-width; }
+/* line 24, ../scss/lib/_base-class.scss */
+a, button {
+  outline: 0; }
+
+/* line 28, ../scss/lib/_base-class.scss */
 .left {
   float: left; }
 
-/* line 5, ../scss/lib/_base-class.scss */
+/* line 32, ../scss/lib/_base-class.scss */
 .right {
   float: right; }
 
-/* line 9, ../scss/lib/_base-class.scss */
+/* line 36, ../scss/lib/_base-class.scss */
 .clearfix {
   clear: both; }
+
+/* line 40, ../scss/lib/_base-class.scss */
+.wrapper {
+  width: 100%;
+  padding: 0 1rem; }
+  @media (min-width: 980px) {
+    /* line 40, ../scss/lib/_base-class.scss */
+    .wrapper {
+      width: 960px;
+      margin: 0 auto;
+      padding: 0; } }
+
+/* line 1, ../scss/module/_header.scss */
+.header {
+  height: 60px;
+  width: 100%;
+  background-color: #fefefe;
+  border-bottom: 1px solid #e2e7ea;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  text-align: center; }
+  /* line 13, ../scss/module/_header.scss */
+  .header .header--logo {
+    display: inline-block;
+    margin-top: .7rem; }
+    /* line 16, ../scss/module/_header.scss */
+    .header .header--logo img {
+      width: 40px;
+      height: auto;
+      margin-top: .5rem; }
+
+/* line 1, ../scss/module/_accueil.scss */
+.accueil {
+  background: url(../img/accueil.jpg) no-repeat;
+  background-size: 140%;
+  padding-top: 50%;
+  width: 100%;
+  position: relative; }
+  /* line 7, ../scss/module/_accueil.scss */
+  .accueil .accueil--content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding-top: 0;
+    filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+    opacity: 1;
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  /* line 16, ../scss/module/_accueil.scss */
+  .accueil .accueil--logo {
+    width: 150px; }
+    @media (min-width: 50em) {
+      /* line 16, ../scss/module/_accueil.scss */
+      .accueil .accueil--logo {
+        width: 400px; } }
+  /* line 22, ../scss/module/_accueil.scss */
+  .accueil .accueil--title {
+    font-size: 1rem;
+    color: white; }
+    @media (min-width: 50em) {
+      /* line 22, ../scss/module/_accueil.scss */
+      .accueil .accueil--title {
+        font-size: 2rem; } }
+
+/* line 1, ../scss/module/_concept.scss */
+.concept {
+  background-color: #2F2E30;
+  padding: 1rem 0;
+  text-align: center; }
+  /* line 5, ../scss/module/_concept.scss */
+  .concept .text--text {
+    width: 100%;
+    color: white;
+    font-style: italic; }
+    @media (min-width: 50em) {
+      /* line 5, ../scss/module/_concept.scss */
+      .concept .text--text {
+        width: 75%; } }
+    @media (min-width: 62em) {
+      /* line 5, ../scss/module/_concept.scss */
+      .concept .text--text {
+        width: 75%; } }
+
+/* line 1, ../scss/module/_sponsor.scss */
+.sponsors {
+  background-color: #f8f7f5;
+  padding: 1rem 0; }
+  /* line 4, ../scss/module/_sponsor.scss */
+  .sponsors .wrapper {
+    text-align: center; }
+  /* line 7, ../scss/module/_sponsor.scss */
+  .sponsors .sponsors--list {
+    text-align: center;
+    padding: 1rem 0; }
+    /* line 10, ../scss/module/_sponsor.scss */
+    .sponsors .sponsors--list li {
+      display: inline-block;
+      margin: 1rem 2rem; }
+      @media (min-width: 960px) {
+        /* line 10, ../scss/module/_sponsor.scss */
+        .sponsors .sponsors--list li {
+          filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=60);
+          opacity: 0.6; }
+          /* line 16, ../scss/module/_sponsor.scss */
+          .sponsors .sponsors--list li:hover {
+            filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+            opacity: 1; } }
+
+/* line 1, ../scss/module/_footer.scss */
+.footer {
+  background-color: #2F2E30;
+  color: #939393;
+  padding: 1rem 0;
+  overflow: hidden;
+  text-align: center; }
+  @media (min-width: 960px) {
+    /* line 1, ../scss/module/_footer.scss */
+    .footer {
+      text-align: left; } }
+  /* line 10, ../scss/module/_footer.scss */
+  .footer a {
+    color: #939393;
+    text-decoration: underline; }
+  /* line 14, ../scss/module/_footer.scss */
+  .footer hr {
+    display: inline-block;
+    width: 20px;
+    background-color: #939393;
+    margin: 1rem auto; }
+  /* line 20, ../scss/module/_footer.scss */
+  .footer .footer--logowb {
+    color: #939393;
+    line-height: 0;
+    font-size: 3rem;
+    display: inline-block;
+    vertical-align: top; }
+    @media (min-width: 960px) {
+      /* line 20, ../scss/module/_footer.scss */
+      .footer .footer--logowb {
+        font-size: 2rem;
+        float: left; } }
+  /* line 31, ../scss/module/_footer.scss */
+  .footer .footer--list {
+    float: right;
+    overflow: hidden;
+    width: 100%; }
+    @media (min-width: 960px) {
+      /* line 31, ../scss/module/_footer.scss */
+      .footer .footer--list {
+        width: calc(100% - 60px); } }
+    /* line 38, ../scss/module/_footer.scss */
+    .footer .footer--list li {
+      float: left;
+      width: 100%; }
+      @media (min-width: 50em) {
+        /* line 38, ../scss/module/_footer.scss */
+        .footer .footer--list li {
+          width: 25%; } }
+      /* line 44, ../scss/module/_footer.scss */
+      .footer .footer--list li .footer__list--title {
+        font-size: 14px;
+        display: inline-block;
+        font-weight: 300;
+        margin-bottom: 1rem;
+        text-transform: uppercase; }
+      /* line 51, ../scss/module/_footer.scss */
+      .footer .footer--list li .footer__list--text {
+        overflow: hidden;
+        display: inline-block;
+        width: 100%;
+        font-size: 10px;
+        margin-bottom: .5rem; }
+
+/* line 1, ../scss/ui/_text.scss */
+.text--title {
+  overflow: hidden;
+  width: 100%;
+  text-align: center; }
+  /* line 5, ../scss/ui/_text.scss */
+  .text--title h2 {
+    font-size: 16px;
+    text-transform: uppercase;
+    padding-bottom: .2rem;
+    border-bottom: 2px solid #7c8f9f;
+    display: inline-block; }
+  /* line 13, ../scss/ui/_text.scss */
+  .text--title.dark h2 {
+    color: #14b1d2;
+    border-bottom-color: #14b1d2; }
+
+/* line 19, ../scss/ui/_text.scss */
+.text--title, .text--text {
+  color: #7c8f9f;
+  margin: 1rem 0; }
+
+/* line 24, ../scss/ui/_text.scss */
+.text--text {
+  font-size: 16px;
+  width: 100%;
+  color: #484848;
+  font-weight: 400;
+  display: inline-block; }

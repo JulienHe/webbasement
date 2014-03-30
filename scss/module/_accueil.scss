@@ -1,0 +1,29 @@
+.accueil{
+	background: url(../img/accueil.jpg) no-repeat;
+	background-size: 140%;
+	padding-top: 50%;
+	width: 100%;
+	position: relative;
+	.accueil--content{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		padding-top: 0;
+		@include opacity(1);
+		@include translate(-50%, -50%);
+		text-align: center;
+	}
+	.accueil--logo{
+		width: 150px;
+		@include breakpoint($bp-med) {
+			width: 400px;
+		}
+	}
+	.accueil--title{
+		font-size: 1rem;
+		color: white;
+		@include breakpoint($bp-med) {
+			font-size: 2rem;
+		}
+	}
+}

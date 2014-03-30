@@ -1,13 +1,12 @@
 [class*='button--']{
 	display: inline;
-	border: 1px solid $border;
+	border: 3px solid $border;
 	color: $lightBlack;
 	background-color: transparent;
 	padding: .5rem 1.5rem;
 	outline: 0;
 	@include border-radius(2px);
-	font-size: 1.2rem;
-	font-weight: 100;
+	font-size: 1rem;
 	text-transform: uppercase;
 	margin: .5rem 0;
 	@extend %animateFast;
@@ -15,6 +14,8 @@
 	text-decoration: none;
 	text-align: center;
 	cursor: pointer;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 700;
 	&:hover, &:focus,&.selected{
 		background-color: lighten($lightGrayButton, 5%);
 	}
@@ -22,16 +23,11 @@
 
 //Colors we want
 $color-collection: 
-($green, $lightBlack, $blue, $orange, $red, white);
+($wb-color);
 
 //Type button we want (Collection must be equal to colors collection)
 $type-collection : 
-(login,add) 
-(back) 
-(basic)
-(unfollow) 
-(reset,remove)
-(gotit);
+(mail);
 
 @each $colors in $color-collection {
 	$theColor : $colors;

@@ -1,0 +1,22 @@
+.sponsors{
+	background-color: #f8f7f5;
+	padding: 1rem 0;
+	.wrapper{
+		text-align: center;
+	}
+	.sponsors--list{
+		text-align: center;
+		padding: 1rem 0;
+		li{
+			display: inline-block;
+			margin:1rem 2rem;
+			@extend %animate;
+			@include breakpoint(960px) {
+				@include opacity(.6);
+				&:hover{
+					@include opacity(1);
+				}
+			}
+		}
+	}
+}

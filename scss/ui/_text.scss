@@ -1,0 +1,30 @@
+.text--title{
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+	h2{
+		font-size: 16px;
+		text-transform: uppercase;
+		padding-bottom: .2rem;
+		border-bottom: 2px solid $text;
+		display: inline-block;
+	}
+	&.dark{
+		h2{
+			color: $wb-color;
+			border-bottom-color: $wb-color;
+		}
+	}
+}
+.text--title,.text--text{
+	color: $text;
+	margin: 1rem 0;
+}
+
+.text--text{
+	font-size: 16px;
+	width: 100%;
+	color: #484848;
+	font-weight: 400;
+	display: inline-block;
+}
