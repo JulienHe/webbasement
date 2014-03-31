@@ -6,33 +6,42 @@
 
 	<!-- Stylesheets -->
 	<link rel="stylesheet" href="css/application.css">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/ico" href="favicon.ico"/>
 </head>
 <body>
-	
+
+	<!-- Header -->	
 	<header class="header">
 		<div class="wrapper">
-		<a href="index.html" title="Page d'accueil du web basement">
-			<h1 class="header--logo">
-				<img src="img/logo_webbasement-small.svg" alt="Logo du web basement" width="100" height="51">
-			</h1>
-		</a>
+			<a href="index.html" title="Page d'accueil du web basement">
+				<h1 class="header--logo">
+					<img src="img/logo_webbasement-small.svg" alt="Logo du web basement" width="100" height="51">
+				</h1>
+			</a>
 		</div>
 	</header>
 
+	<!-- Accueil -->
 	<section class="accueil" data-background>
 		<div class="accueil--content" data-context>
-			<img src="img/logo_webbasement.png" alt="Web basement" class="accueil--logo">
+			<img src="img/logo_webbasement.png" alt="Web basement logo" class="accueil--logo">
 			<h2 class="accueil--title">9 | 10 Mai 2014</h2>
 		</div>
 	</section>
+	
+	<!-- Concept -->
 	<section class="concept">
 		<div class="wrapper">
 			<div class="text--title dark">
 				<h2>Concept</h2>
 			</div>
-			<p class="text--text">70 étudiants du groupe de travail Design Web et Multimédia (DWM) vont se lancer à l'assaut de 24 heures autour d'un briefing exigeant et intense. Ils seront répartis en petit groupe de guerriers pour créer une app mobile, site où encore une vidéo qu'il pésenteront devant un jury de professionels du web et du design.</p>
+			<p class="text--text">70 étudiants du groupe de travail Design Web et Multimédia (DWM) vont se lancer à l'assaut de 24 heures autour d'un briefing exigeant et intense. Ils seront répartis en petit groupe de guerriers pour créer une application mobile, un site ou bien une vidéo, qu'ils présenteront devant un jury de professionels du web et du design.</p>
 		</div>
 	</section>
+
+	<!-- Sponsors -->
 	<section class="sponsors">
 		<div class="wrapper">
 			<div class="text--title">
@@ -40,57 +49,380 @@
 			</div>
 			<ul class="sponsors--list">
 				<li>
-					<a href="http://sagacify.com/">
-						<img src="img/sponsors/sagacify.png" alt="Logo de Sagacify" width="56" height="50">
+					<a href="http://sagacify.com/" title="Sagacify - Web & mobile applications">
+						<img src="img/sponsors/sagacify.png" alt="Sagacify logo" width="56" height="50">
 					</a>
 				</li>
 				<li>
-					<a href="http://www.redbull.com/be/fr">
-						<img src="img/sponsors/redbull.png" alt="Logo de Red Bull" width="83" height="50">
+					<a href="http://www.redbull.com/be/fr" title="Red Bull">
+						<img src="img/sponsors/redbull.png" alt="Red Bull logo" width="83" height="50">
 					</a>
 				</li>
 				<li>
-					<a href="http://betacowork.com/">
-						<img src="img/sponsors/logo_betacowork.png" alt="Logo du Betacowork" width="145" height="50">
+					<a href="http://betacowork.com/" title="Betacowork - Coworking bruxelles">
+						<img src="img/sponsors/logo_betacowork.png" alt="Betacowork logo" width="145" height="50">
 					</a>
 				</li>
 				<li>
 					<a href="http://www.vedett.com/" title="Vedett">
-						<img src="img/sponsors/vedett.png" alt="Logo de Vedett" width="109" height="50">
+						<img src="img/sponsors/vedett.png" alt="Vedett logo" width="109" height="50">
+					</a>
+				</li>
+				<li>
+					<a href="http://www.spar.be" title="Spar">
+						<img src="img/sponsors/spar_logo.png" alt="Spar logo" width="267" height="50">
 					</a>
 				</li>
 			</ul>
-			<a href="mailto:shervin2502@gmail.com" class="button--mail">Envie d'être un sponsor?</a>
+			<a href="mailto:shervin2502@gmail.com" class="button--mail" title="Devenez sponsor!">Envie d'être un sponsor?</a>
 		</div>
 	</section>
 
+	<!-- Slideshow instagram -->
+	<!-- Can't use ul>li, thanks plugin, thanks... -->
+	<section class="instagram slider uneven">
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage8.s3.amazonaws.com/54e9aacab48111e28dba22000a1f97e5_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/Y4RdxwOfK8/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage7.s3.amazonaws.com/2bc22cbcb41811e2ae2a22000a1f9723_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/Y27UUwHx0H/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage0.s3.amazonaws.com/8e9fc51ab41d11e2803822000ae90265_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/Y2_ut2sb9s/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage2.s3.amazonaws.com/f69d204eb44b11e28c7c22000a1fb876_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/Y3lvvOCpOG/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage0.s3.amazonaws.com/1cb6466eb43511e2be0322000a9f38f1_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/Y3TBranx1w/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage6.s3.amazonaws.com/f93ea836b42811e2aa4422000ae90e71_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/Y3JFRYCpDq/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage1.s3.amazonaws.com/41a4b04cb42a11e2b04622000a1f9be0_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/Y3KIhnprVJ/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage0.s3.amazonaws.com/bea3d456b42511e29fa922000a1f8feb_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/Y3Gb-znxyM/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage8.s3.amazonaws.com/d6ea842097ba11e1af7612313813f8e8_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KTHvmIx_EM/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage11.s3.amazonaws.com/b0794a8896c511e1a92a1231381b6f02_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KP-6qng4ZX/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage7.s3.amazonaws.com/9f55b7cc96c111e18bb812313804a181_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KP7lcTB1Yf/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage2.s3.amazonaws.com/c052e8fe96a411e19dc71231380fe523_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KPj7wxQyTi/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage11.s3.amazonaws.com/0b4df3d6969f11e1a9f71231382044a1_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KPfQi5tAU7/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage6.s3.amazonaws.com/615191aa969211e1be6a12313820455d_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KPU4lkC07u/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage0.s3.amazonaws.com/485233da969211e1abb012313813106f_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KPUzd9mnOI/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage5.s3.amazonaws.com/de9655ca969111e19e4a12313813ffc0_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KPUd0Bg4dl/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage11.s3.amazonaws.com/5b0dc060967a11e1abd61231381b6d77_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KPBNA2Gu8r/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage0.s3.amazonaws.com/4a40d03e967911e180d51231380fcd7e_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KPAVJNGnJo/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage3.s3.amazonaws.com/06d18f78967911e1b9f1123138140926_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KPAHVUmu8j/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage0.s3.amazonaws.com/78a516d8966a11e1abb012313813106f_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KO0MNmx_HY/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage8.s3.amazonaws.com/db44d180966911e19e4a12313813ffc0_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KOzr-xhflU/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage9.s3.amazonaws.com/62eb758e965c11e1ab011231381052c0_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KOopwmi081/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage6.s3.amazonaws.com/f18d0b6a965a11e1a39b1231381b7ba1_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KOneHPxube/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage5.s3.amazonaws.com/9cb7f658964c11e1af7612313813f8e8_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KObuvIGu7h/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage2.s3.amazonaws.com/5f41f1ec963911e18bb812313804a181_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KOL-AKGnCW/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage10.s3.amazonaws.com/f1a1aea4963111e1abd61231381b6d77_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KOF4jGC07a/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage1.s3.amazonaws.com/2cbfec32963011e180d51231380fcd7e_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KOEbzFC065/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage8.s3.amazonaws.com/f3cfbeee962911e1a39b1231381b7ba1_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KN_VkMmu-c/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage4.s3.amazonaws.com/19f0b04c961611e1abb012313813106f_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KNvEzCRn5c/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage6.s3.amazonaws.com/e95ee154960d11e1a39b1231381b7ba1_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KNoXa4i0_i/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage10.s3.amazonaws.com/879b58e2960a11e192e91231381b3d7a_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KNlmHID6Ne/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage5.s3.amazonaws.com/3faf5596960611e1a9f71231382044a1_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KNiFqsFFFB/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage1.s3.amazonaws.com/2dede84695f611e1ab011231381052c0_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KNU7K5yGsp/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage5.s3.amazonaws.com/8019f10695f511e1a39b1231381b7ba1_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KNGIMXxuQr/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage9.s3.amazonaws.com/dcefac42953a11e18cf91231380fd29b_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/KK7eZbGnEt/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage11.s3.amazonaws.com/47991b6c8f3411e1a39b1231381b7ba1_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/J3Lymkg4cj/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage6.s3.amazonaws.com/f49d65028d3611e1a92a1231381b6f02_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/JwqjWRA4T6/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+		<div class="multiple">
+			<figure class="instagram--content">
+				<img src="http://distilleryimage1.s3.amazonaws.com/83d3e2028ce011e1989612313815112c_7.jpg" alt="#wbmt sur instagram">
+				<figcaption>
+					<a href="http://instagram.com/p/JvjvX4j6Nd/" data-icon="f" class="instagram--link"></a>
+				</figcaption>
+			</figure>
+		</div>
+	</section>
+
+	<!-- Footer -->
 	<footer class="footer">
 		<div class="wrapper">
 			<div class="text--title dark">
 				<h2>Contact</h2>
 			</div>
 			<span data-icon="b" class="footer--logowb"></span>
+			<ul class="footer--social">
+				<li>
+					<a href="http://instagram.com/webbasement" title="Web basement sur instagram"><span data-icon="d"></span>Instragam</a>
+				</li>
+				<li>
+					<a href="https://twitter.com/webbasement" title="Web basement sur Twitter"><span data-icon="e"></span>Twitter</a>
+				</li>
+			</ul>
 			<ul class="footer--list">
 				<li>
 					<h3 class="footer__list--title">Sponsoring</h3>
-					<p class="footer__list--text">Shervin Sardari<br><a href="mailto:shervin2502@gmail.com">Email</a> | <a href="https://twitter.com/KBelouh">Twitter</a></p>
-					<p class="footer__list--text">Sarah Fintolini<br><a href="mailto:shervin2502@gmail.com">Email</a> | <a href="https://twitter.com/KBelouh">Twitter</a></p>
+					<p class="footer__list--text">Shervin Sardari<br><a href="mailto:shervin2502@gmail.com" title="Envoyez un mail à Shervin Sardari">Email</a> | <a href="https://twitter.com/sardari_shervin" title="Shervin Sardari sur Twitter">Twitter</a></p>
+					<p class="footer__list--text">Sara Fintolini<br><a href="mailto:sarafintolini@gmail.com" title="Envoyez un mail à Sara Fintolini">Email</a> | <a href="https://twitter.com/Hatchiiiko" title="Sara Fintolini sur Twitter">Twitter</a></p>
 				</li>
 				<li>
 					<h3 class="footer__list--title">Web</h3>
-					<p class="footer__list--text">Kamal Belouh<br><a href="mailto:shervin2502@gmail.com">Email</a> | <a href="https://twitter.com/KBelouh">Twitter</a></p>
-					<p class="footer__list--text">Romain Dubay<br><a href="mailto:shervin2502@gmail.com">Email</a> | <a href="https://twitter.com/KBelouh">Twitter</a></p>
-					<p class="footer__list--text">Henry Nicolas<br><a href="mailto:shervin2502@gmail.com">Email</a> | <a href="https://twitter.com/KBelouh">Twitter</a></p>
+					<p class="footer__list--text">Kamal Belouh<br><a href="mailto:kasef6240@gmail.com" title="Envoyez un mail à Kamal Belouh">Email</a> | <a href="https://twitter.com/KBelouh" title="Kamal Belouh sur Twitter">Twitter</a></p>
+					<p class="footer__list--text">Romain Dubay<br><a href="mailto:dubrom1@hotmail.com" title="Envoyez un mail à Romain Dubay">Email</a> | <a href="https://twitter.com/RomainDubay" title="Romain Dubay sur Twitter">Twitter</a></p>
+					<p class="footer__list--text">Henry Nicolas<br><a href="https://twitter.com/henrykiki" title="Henry Nicolas sur Twitter">Twitter</a></p>
 				</li>
 				<li>
 					<h3 class="footer__list--title">Communication</h3>
-					<p class="footer__list--text">Cyrielle Vuillemin<br><a href="mailto:shervin2502@gmail.com">Email</a> | <a href="https://twitter.com/KBelouh">Twitter</a></p>
-					<p class="footer__list--text">Laura Mélard<br><a href="mailto:shervin2502@gmail.com">Email</a> | <a href="https://twitter.com/KBelouh">Twitter</a></p>
+					<p class="footer__list--text">Cyrielle Vuillemin<br><a href="mailto:cyrielle.vuillemin@gmail.com" title="Envoyez un mail à Cyrielle Vuillemin">Email</a> | <a href="https://twitter.com/Cyrielle_Fawna" title="Cyrielle Vuillemin sur Twitter">Twitter</a></p>
+					<p class="footer__list--text">Laura Mélard<br><a href="mailto:laura.melard@gmail.com" title="Envoyez un mail à Laura Mélard">Email</a> | <a href="https://twitter.com/Laucamme" title="Laura Mélard sur Twitter">Twitter</a></p>
 				</li>
 				<li>
 					<h3 class="footer__list--title">Jury</h3>
-					<p class="footer__list--text">Nam-Quam Gossens<br><a href="mailto:shervin2502@gmail.com">Email</a> | <a href="https://twitter.com/KBelouh">Twitter</a></p>
-					<p class="footer__list--text">Colin Maes<br><a href="mailto:shervin2502@gmail.com">Email</a> | <a href="https://twitter.com/KBelouh">Twitter</a></p>
+					<p class="footer__list--text">Nam-Quam Gossens<br><a href="https://twitter.com/NamQuang_G" title="Nam-Quam Gossens sur Twitter">Twitter</a></p>
+					<p class="footer__list--text">Colin Maes<br><a href="mailto:maescolin@gmail.com" title="Envoyez un mail à Colin Maes">Email</a> | <a href="https://twitter.com/colin_maes" title="Colin Maes sur Twitter">Twitter</a></p>
 				</li>
 			</ul>
 		</div>

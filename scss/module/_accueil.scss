@@ -6,12 +6,16 @@
 	position: relative;
 	.accueil--content{
 		position: absolute;
-		top: 50%;
+		top: 60%;
 		left: 50%;
 		padding-top: 0;
 		@include opacity(1);
 		@include translate(-50%, -50%);
 		text-align: center;
+		@include breakpoint($bp-med) {
+			top: 50%;
+			left: 50%;
+		}
 	}
 	.accueil--logo{
 		width: 150px;

@@ -29,3 +29,35 @@ $(window).scroll(function(){
 
 ga('create', 'UA-21761886-1', 'webbasement.be');
 ga('send', 'pageview');
+
+//slider
+$('.uneven').slick({
+    dots: true,
+    infinite: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 2,
+    dots: false,
+    responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2
+      }
+    },{
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+  });

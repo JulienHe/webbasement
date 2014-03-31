@@ -21,6 +21,9 @@ h1, h2, h3, h4, h5, h6{
 @-o-viewport { width: device-width; }
 @viewport { width: device-width; }
 
+::selection {color:white;background:$wb-color;}
+::-moz-selection {color:white;background:$wb-color;}
+
 a,button{
 	outline: 0;
 }

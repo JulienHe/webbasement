@@ -1,0 +1,41 @@
+.instagram{
+	background-color: #fefefe;
+	border-top: 1px solid $wb-color;
+	border-bottom: 1px solid $wb-color;
+	cursor:move;
+	overflow: hidden;
+	a{
+		color: $wb-color;
+	}
+	.instagram--content{
+		position: relative;
+		figcaption{
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba($bg-footer, .7);
+			@include opacity(0);
+			@extend %animate;
+			.instagram--link{
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				font-size: 3rem;
+				@include translate(-50%, -50%);
+			}
+		}
+		&:hover{
+			figcaption{
+				@include opacity(1);
+			}
+		}
+		figure{
+			img{
+				display: inline-block;
+				vertical-align: top;
+			}
+		}
+	}
+}
